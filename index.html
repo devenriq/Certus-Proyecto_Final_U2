@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/6ef3f7673f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <!-- navegacion -->
+    <header id="header">
+      <input type="checkbox" name="" id="btn-menu" />
+      <label for="btn-menu"><i class="fas fa-bars"></i></label>
+      <nav class="navegacion" id="nav-bar">
+        <ul class="barra-navegacion">
+          <li><a href="#" class="nav-link">Inicio</a></li>
+          <li><a href="#" class="nav-link">Familia</a></li>
+          <li><a href="#" class="nav-link">Amigos</a></li>
+          <li><a href="#" class="nav-link">Estudios</a></li>
+          <li><a href="#" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="menu">
+      <div class="vacío"></div>
+      <!-- menú lado derecho -->
+      <div class="right-side">
+        <div class="title">
+          <h1>
+            Octavio Enrique <br />
+            Palomino Castello<br />
+          </h1>
+        </div>
+        <div class="sub-title">
+          <h2>
+            Bienvenido mi portafolio personal. Pasa y revisa lo que te sea de
+            interés
+          </h2>
+        </div>
+        <div class="text">
+          <p>
+            Como ya viste, mi nombre es largo. Prefiero que me llamen Enrique
+            Palomino. Soy de Perú, originario de Arequipa, el país que nunca
+            fue; el lugar donde las radios ponen el himno de la provincia a las 12pm
+            todos los días.
+            <br />
+            <br />
+            Acabé la carrera de Ing. Civil en 2020; en plena pandemia. Dada la
+            coyuntura, quise buscar nuevos horizontes y me encuentro estudiando
+            desarrollo web.
+            <br />
+            <br />
+            En la siguiente sección te contaré más sobre mí; pero antes,
+            quisiera jugar un juego: Adivina mi edad!
+            <div class="game">
+              <div class="input">
+                <label for="age">Adivina mi edad:</label>
+                <input type="number" name="" id="age" placeholder="Pon un número">
+                <button id="game-button" onclick="ageGame()">Adivina</button>
+              </div>
+              <br>
+              <div class="output">
+                <p>Acá va la respuesta: <span id="response"></span></p>
+              </div>
+            </div>
+          </p>
+        </div>
+        <!-- <form class="formulario" action="">
+          <div class="container-e-mail">
+            <input type="e-mail" name="e-mail" id="input-field" />
+          </div>
+          <div class="button">
+            <button type="button" class="button">Enviar</button>
+          </div>
+        </form> -->
+      </div>
+
+      <!-- imagen lado izquierdo -->
+      <div class="profile-image-container">
+        <img
+          class="profile-image"
+          src="./images/profile.jpg"
+          alt="Profile Image"
+        />
+      </div>
+    </div>
+
+    <!-- información familia -->
+    <div class="family-information-background">
+      <div class="photo">
+        <img src="" alt="" />
+      </div>
+      <div class="family-information">
+        <h2>Familia</h2>
+        <div id="family-description">
+          <p>
+            Lorem ipsum dolor sit holaamet consectetur adipisicing elit. Quod
+            natus eum, laborum quae qui neque ipsum sit impedit esse repudiandae
+            nihil aliquid ullam voluptatibus eos error architecto facilis
+            accusamus nisi. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Quam, quibusdam itaque animi sint maiores quod quaerat
+            recusandae doloribus perferendis suscipit, consequatur sunt repellat
+            magni et deserunt. Blanditiis quidem suscipit repudiandae!
+          </p>
+        </div>
+      </div>
+      <div class="container-family">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/3844788/pexels-photo-3844788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Contractura Muscular" />
+          <h3>Padres</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/4016579/pexels-photo-4016579.jpeg?auto=compress&cs=tinysrgb&w=600/" alt="Abstracto" />
+          <h3>Hermanos</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/7004697/pexels-photo-7004697.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Abstract" />
+          <h3>Tios</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/3794359/pexels-photo-3794359.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fractura" />
+          <h3>Primos</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- información amigos -->
+    <div class="friends-information-background">
+      <div class="photo">
+        <img src="" alt="" />
+      </div>
+      <div class="friends-information">
+        <h2>Amigos</h2>
+        <div id="friends-description">
+          <p>
+            Lorem ipsum dolor sit holaamet consectetur adipisicing elit. Quod
+            natus eum, laborum quae qui neque ipsum sit impedit esse repudiandae
+            nihil aliquid ullam voluptatibus eos error architecto facilis
+            accusamus nisi. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Quam, quibusdam itaque animi sint maiores quod quaerat
+            recusandae doloribus perferendis suscipit, consequatur sunt repellat
+            magni et deserunt. Blanditiis quidem suscipit repudiandae!
+          </p>
+        </div>
+      </div>
+      <div class="container-friends">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Contractura Muscular" />
+          <h3>Mejor amigo</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tendinitis" />
+          <h3>Amigo de infancia</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/842571/pexels-photo-842571.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Meniscopatía" />
+          <h3>Amigos de universidad</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- información estudios -->
+    <div class="estudios-information-background">
+      <div class="photo">
+        <img src="" alt="" />
+      </div>
+      <div class="estudios-information">
+        <h2>Estudio</h2>
+        <div id="estudios-description">
+          <p>
+            Lorem ipsum dolor sit holaamet consectetur adipisicing elit. Quod
+            natus eum, laborum quae qui neque ipsum sit impedit esse repudiandae
+            nihil aliquid ullam voluptatibus eos error architecto facilis
+            accusamus nisi. Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Quam, quibusdam itaque animi sint maiores quod quaerat
+            recusandae doloribus perferendis suscipit, consequatur sunt repellat
+            magni et deserunt. Blanditiis quidem suscipit repudiandae!
+          </p>
+        </div>
+      </div>
+      <div class="container-estudios">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/3862377/pexels-photo-3862377.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Civil" />
+          <h3>Ing. Civil</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tendinitis" />
+          <h3>Desarrollo Web</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Meniscopatía" />
+          <h3>Data Science</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- información contactos -->
+    <div class="contact-form"></div>
+  </body>
+  <script src="./index.js"></script>
+</html>

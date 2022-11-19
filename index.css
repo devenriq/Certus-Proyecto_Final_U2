@@ -1,0 +1,377 @@
+:root {
+  --main-font: 'Roboto Mono', monospace;
+  --active-button: "#FE6142";
+  --secondary-button: "#3F51B5";
+  --primary-text: "#120C38";
+  --shadow: "#FDFDFE";
+  --primary-background: "#FFFFFF";
+  --secondary-background: "#172176";
+
+  --h1-font-size: 60px;
+  --h2-font-size: 30px;
+  --h3-font-size: 18px;
+  --nav-options-font: 14px;
+  --subtitle-font-size: 20px;
+  --body-font-size: 15px;
+  --footer-font-size: 24px;
+  --buttons-text-font-size: 16px;
+  --categories-font-size: 18px;
+  --links-font-size: 24px;
+  --subtitle-body-font-size: 22px;
+
+  --h1-font-weight: 800;
+  --h2-font-weight: 700;
+  --h3-font-weight: 700;
+  --subtitle-font-weight: 400;
+  --body-regular-font-weight: 400;
+  --body-bold-font-weight: 700;
+  --footer-font-weight: 700;
+  --buttons-text-font-weight: 900;
+  --categories-font-weight: 800;
+  --links-font-weight: 700;
+
+  --h1-color: rgba(30, 30, 30, 0.9);
+  --h2-color: rgba(10, 10, 100, 0.7);
+  --h3-color: rgba(10, 10, 100, 0.7);
+  --buttom-color: white;
+}
+
+
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Arial Black";
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+  color: var(--h1-color);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+  color: var(--h2-color);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
+  color: var(--h3-color);
+}
+
+/* DESKTOP */
+/* navegacion */
+
+header {
+  width: 100%;
+  background: orangered;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: none;
+}
+
+#header-img {
+  width: 30px;
+  height: 30px;
+}
+
+.navegacion ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navegacion li {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.navegacion li:hover {
+  background: rgba(0, 0,0, .3);
+}
+
+.navegacion li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* menu */
+
+.menu {
+  display: flex;
+}
+
+/* lado derecho */
+
+.right-side {
+  width: 600px;
+  height: 650px;
+  padding: 20px;
+  margin: auto;
+}
+
+.right-side .title {
+  margin: 20px 0px;
+}
+
+.right-side .sub-title {
+  margin-bottom: 10px
+}
+
+.right-side .text {
+  color: rgba(50, 50, 50, 0.8);
+  font-size: var(--body-font-size);
+}
+
+.formulario {
+  width: 0px;
+  margin: 10px 0;
+}
+
+.container-e-mail{
+  margin: 10px 0;
+}
+
+
+/* imagen izquierda */
+
+.profile-image-container {
+  width: 40%;
+  height: 30px;
+}
+
+.profile-image{
+  width: 90%;
+  min-width: 300px;
+margin: auto;
+object-fit: contain;
+}
+/* foto */
+
+.photo {
+  width: 300px;
+  margin: auto;
+  padding: 50px;
+}
+
+#photo-diana {
+  width: 300px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+/* información personal */
+
+.family-information-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 200, 200, 0.2);
+}
+
+.family-information {
+  width: 600px;
+  margin: auto;
+}
+
+.family-information h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.family-information #family-description {
+  text-align: justify;
+}
+
+.container-family {
+  width: 80%;
+  height: 100%;
+  margin: 100px auto;
+  text-align: center;
+  display: flex
+}
+
+.card {
+  background-color: rgba(200, 200, 200, 0.5);
+  margin: 15px;
+  justify-content: center;
+  width: 250px;
+  height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, .2);
+}
+
+.card img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* información amigos */
+
+.friends-information-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 200, 200, 0.4);
+}
+
+.friends-information {
+  width: 600px;
+  margin: auto;
+}
+
+.friends-information h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.family-information #family-description {
+  text-align: justify;
+}
+
+.container-friends {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;}
+  /* height: 100%;
+  margin: 100px auto;*/
+
+
+  .container-friends .card{
+    width: auto;
+    text-align: center
+
+  }
+
+/* información estudios */
+
+.estudios-information-background {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(200, 200, 200, 0.6);
+}
+
+.estudios-information {
+  width: 600px;
+  margin: auto;
+}
+
+.estudio-information h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.estudios-information #estudios-description {
+  text-align: justify;
+}
+
+.container-estudios {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;}
+  /* height: 100%;
+  margin: 100px auto;*/
+
+
+  .container-estudios .card{
+    width: auto;
+    text-align: center
+
+  }
+
+
+
+/* TABLET */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* MOVIL */
+
+@media (max-width: 768px){
+  header label {
+    display: block;
+  }
+
+  .navegacion {
+    position: absolute;
+    background: orangered;
+    width: 100%;
+    height: 100%;
+    margin-left: -100%;
+    transition: all .5s;
+  }
+
+  .navegacion  ul{
+    flex-direction: column;
+  }
+
+  #btn-menu:checked ~ .navegacion {
+    margin: 0;
+  }
+
+  /* menu */
+
+  /* imagen derecha */
+  .right-side {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* imagen izquierda */
+  .image {
+    display: none;
+  }
+
+  /* photo */
+  .photo {
+    width: 200px;
+    margin: auto;
+    padding: 30px;
+  }
+
+  #photo-diana {
+    width: 200px;
+
+  }
+
+  /* informacion personal */
+  .personal-information {
+    width: 400px;
+    margin: 0 20px;
+    margin: auto;
+
+  }
+
+  /* servicios */
+  .container-servicios {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .cards {
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+  }
+}
